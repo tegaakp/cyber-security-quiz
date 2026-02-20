@@ -25,3 +25,14 @@ For user documentation this readme will cover:
 - What the quiz does
 -  Instructions on how to run the quiz locally on your computer
 -   re-requisites and running the code 
+
+
+## DESIGN
+
+## DEVELOPMENT
+
+## TESTING
+
+## DOCUMENTATION
+
+## EVALUATION
