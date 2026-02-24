@@ -29,6 +29,8 @@ For user documentation this readme will cover:
 
 ## DESIGN
 
+In this section, we focus on the design of the quiz interface. The graphical user interface (GUI) was created using [Figma](https://www.figma.com/files/902667414815738345/recents-and-sharing?fuid=1560570689866732652) , which was used to plan and organise how the quiz looks and behaves before development. The design shows the layout, button placement, question screens, and overall structure to ensure the experience is clear and easy to follow. Figure 1 illustrates the user flow from a front-end perspective, meaning it represents what users will actually see and interact with in the final version. This includes how users move between questions, enter their answers, receive validation messages, and progress through the quiz in a logical and structured way. The aim of the design is to provide a simple, intuitive, and user-friendly experience for all users.
+
 ## DEVELOPMENT
 
 ## TESTING
