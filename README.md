@@ -130,7 +130,7 @@ Core Methods:
 - save_results_to_csv() - Persists quiz results with timestamp
 
 
-## User Class (user.py)
+### User Class (user.py)
 Represents a quiz participant with built-in validation.
 
 Key Features:
@@ -221,11 +221,11 @@ Key Technologies
 - unittest - Testing framework
 ## TESTING
 
-The tests are organized into two main categories:
+The tests are organised into two main categories:
 
 **1. Unit Tests**
 
-These tests focus on individual classes and their core behavior.
+These tests focus on individual classes and their core behaviour.
 
 Question Class
 
@@ -351,3 +351,20 @@ Press Ctrl + C (Windows/Linux) or Cmd + C (Mac)
 The application will shut down
 
 ## EVALUATION
+
+This README is designed for two types of readers:
+
+- Developers who want to understand how the code works and possibly extend it.
+- End users who want clear instructions on how to run the application.
+
+The Development section explains the structure of the project and how the parts fit together, without going too deep into unnecessary technical detail.
+
+The Documentation section focuses on clarity. It uses simple language and step-by-step guidance so anyone — regardless of technical experience — can get the app up and running.
+
+The Testing section connects both groups. It explains what is being tested and how to run the tests, so developers can verify functionality and users can confirm everything works properly.
+
+Overall, this documentation walks through the entire lifecycle of the project — from setup and development to testing and usage — giving a clear and practical guide for anyone using or building on this application.
+
+Please refer to each file to gage a better understanding of the contents of the application.
+
+**Thank you for taking the time to read through this documentation — your interest and time are truly appreciated!**
