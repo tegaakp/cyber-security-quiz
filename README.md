@@ -49,6 +49,15 @@ This describes how the system performs
 - Screen 4: The application must store data securely in a csv file
 - Screen 5: The system should allow the application to be run again.
 
+Tech-stack outline:
+
+- [Python 3](https://www.python.org/downloads/) — core programming language
+- [Streamlit](https://streamlit.io/) -graphical user interface
+- [csv](https://docs.python.org/3/library/csv.html) — local data storage in CSV format
+- [re](https://docs.python.org/3/library/re.html) — regular expressions for input validation
+- [datetime](https://docs.python.org/3/library/datetime.html) — timestamp generation
+- [unittest](https://docs.python.org/3/library/unittest.html) — automated unit testing
+
 ## DEVELOPMENT
 
 This section highlights the technical side of how the quiz was built and is intended for readers who want a deeper look into the development process. If you’re looking for a more user‑friendly explanation instead, please refer to the **Documentation** section of this README.
