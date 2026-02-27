@@ -72,6 +72,8 @@ If you are using python 3 run this command:
 
 This is the main module forming the central organiser of all modules  It coordinates navigation, initialises core objects, and manages application state using Streamlit’s session system. When the app runs, this file decides what happens next.
 
+To access the full code, please navigate to the repo and work your way through the .py files.
+
 This is the desired flow:
 
      Welcome → Quiz → End
@@ -84,7 +86,115 @@ Imported dependencies
       from quiz_page import show_quiz_screen
       from quiz_complete import show_end_screen
 
+Within the code, you will notice this command line:
 
+     if st.session_state.screen == "welcome":
+        show_welcome_screen()
+
+The st.session_state is needed to maintain objects across reruns. Since Streamlit reruns the script on every interaction, session state is critical for maintaining continuity and ensuring all data is safe despite reruns. 
+
+1. Question Class (question_class.py)
+Represents a single quiz question with its answer options.
+
+Key Features:
+
+Stores question text, multiple-choice options, and the correct answer index
+Provides a method to validate user answers
+Encapsulates question logic in a reusable object
+Example:
+
+question = Question(
+    text="What is phishing?",
+    options=["A type of malware", "A social engineering attack", "Fishing activity"],
+    correct_index=1
+)
+2. Quiz Class (quiz.py)
+Manages the entire quiz session, including questions, user answers, and scoring.
+
+Key Features:
+
+Stores a collection of Question objects
+Tracks user answers throughout the quiz
+Calculates scores and validates completion
+Saves results to CSV for record-keeping
+Provides detailed feedback for each question
+Core Methods:
+
+answer_question() - Records user's answer
+calculate_score() - Computes total correct answers
+is_complete() - Checks if all questions are answered
+save_results_to_csv() - Persists quiz results with timestamp
+3. User Class (user.py)
+Represents a quiz participant with built-in validation.
+
+Key Features:
+
+Encapsulates user data (name)
+Validates user input according to business rules:
+Name must be 3-19 characters
+Cannot contain numbers
+Cannot be blank
+Demonstrates encapsulation by keeping validation logic within the class
+4. QuizManager Class (quiz_manager.py)
+Acts as a factory for creating quiz instances and managing question data.
+
+Key Features:
+
+Loads questions from CSV file
+Creates Question objects from raw data
+Provides Quiz instances on demand
+Centralises data loading logic
+Workflow:
+
+manager = QuizManager("questions.csv")
+quiz = manager.create_quiz()  # Returns a Quiz with loaded questions
+5. UI Modules
+The application uses separate modules for each screen:
+
+welcome_page.py - User registration and validation
+quiz_page.py - Main quiz interface with question display
+quiz_complete.py - Results screen with detailed feedback
+main.py - Application controller managing screen flow
+OOP Principles Applied
+Encapsulation
+Each class manages its own data and provides methods to interact with it:
+
+User class handles name validation internally
+Question class knows how to check if an answer is correct
+Quiz class manages its own scoring logic
+Single Responsibility
+Each module has one clear purpose:
+
+QuizManager handles data loading
+Quiz manages quiz state
+UI modules handle display logic only
+Separation of Concerns
+Business logic (classes) is separated from presentation logic (Streamlit UI), making the code easier to test and maintain.
+
+Data Flow
+Initialisation: QuizManager loads questions from CSV
+User Input: User object validates participant name
+Quiz Creation: QuizManager creates a Quiz instance
+Answer Collection: Quiz stores user responses
+Scoring: Quiz calculates results using Question.is_correct()
+Persistence: Results saved to quiz_results.csv
+File Structure
+├── main.py                 # Application entry point
+├── question_class.py       # Question model
+├── quiz.py                 # Quiz logic and scoring
+├── quiz_manager.py         # Data loading and quiz creation
+├── user.py                 # User model with validation
+├── welcome_page.py         # Welcome screen UI
+├── quiz_page.py            # Quiz interface UI
+├── quiz_complete.py        # Results screen UI
+├── questions.csv           # Question database
+├── quiz_results.csv        # Results storage (auto-generated)
+└── test_smoke_etc.py       # Test suite
+Key Technologies
+Python 3.x - Core programming language
+Streamlit - Web framework for rapid UI development
+CSV Module - Data persistence and loading
+unittest - Testing framework
 ## TESTING
 
 ## DOCUMENTATION
