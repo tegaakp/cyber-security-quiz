@@ -395,7 +395,9 @@ Go back to your terminal window
 Press Ctrl + C (Windows/Linux) or Cmd + C (Mac)
 The application will shut down
 
-### EVALUATION
+For more in-depth technical documentation, each module in the application includes notes and comments to further explain what the functions and code in the module does.
+
+## EVALUATION
 
 This README is designed for two types of readers:
 
