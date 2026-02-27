@@ -58,6 +58,9 @@ Tech-stack outline:
 - [datetime](https://docs.python.org/3/library/datetime.html) — timestamp generation
 - [unittest](https://docs.python.org/3/library/unittest.html) — automated unit testing
 
+- <img width="1258" height="1689" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/4fa3341b-fc00-4854-b030-60932ef456b6" />
+
+
 ## DEVELOPMENT
 
 This section highlights the technical side of how the quiz was built and is intended for readers who want a deeper look into the development process. If you’re looking for a more user‑friendly explanation instead, please refer to the **Documentation** section of this README.
