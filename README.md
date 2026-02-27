@@ -5,7 +5,13 @@
 
 This cybersecurity quiz is a minimum viable product (MVP) designed for early‑career professionals joining the organisation. Its purpose is to introduce new hires to essential cybersecurity practices, reinforce internal standards, and promote strong data protection and privacy habits across all levels of the organisation.
 
-All data used in this quiz is synthetic and intentionally simplified to support beginner‑level learning and ensure a safe, controlled training environment.
+All new employees are required to complete a mandatory cybersecurity awareness training course during onboarding. This course introduces internal security standards, acceptable use policies, and best practices for protecting company assets. A formal assessment at the end of the course requires participants to achieve a minimum passing score of 80%, reinforcing the importance of understanding and applying security principles from the outset of their employment.
+
+The proposed MVP supports this existing requirement by providing an accessible, low-pressure preparation tool for early-career professionals before they complete the official training assessment. Rather than replacing the formal course, the quiz acts as a preparatory learning aid that familiarises users with key concepts, terminology, and scenarios they will encounter later. Importantly, this MVP does not include a pass mark. The intention is to encourage engagement, build confidence, and promote knowledge retention without the stress of formal evaluation.
+
+Whilst this quiz is intended to be a replica of the mandatory course, the questions used in this quiz are of general knowledge and not entirely specific to our organisation's internal guidelines. This is to make sure the application protects the integrity of our standards and does not expose any sensitive guidelines to the public.
+
+By introducing cybersecurity principles early and interactively, this MVP aligns directly with the organisation’s onboarding objectives and contributes to strengthening overall security awareness across the workforce.
 
 This cyber security app is a desktop application that uses [Python](https://www.python.org/0), [Streamlit](https://docs.streamlit.io/develop/concepts) and [Figma](https://www.figma.com/files/902667414815738345/recents-and-sharing?fuid=1560570689866732652). The quiz collects the user’s unique ID passcode to generate a personalised set of security questions. This helps new joiners learn how to stay safe online and protect the organisation’s assets through practical, beginner‑friendly scenarios.
 
@@ -18,13 +24,6 @@ For technical documentation this readme cover:
 - Deploying the code 
 - Implementing GUI/UI design 
 
-
-For user documentation, this readme will cover:
-
-
-- What the quiz does
--  Instructions on how to run the quiz locally on your computer
-- Pre-requisites and running the code 
 
 
 ## DESIGN
