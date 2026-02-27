@@ -215,11 +215,60 @@ File Structure
 
 
 Key Technologies
-Python 3.x - Core programming language
-Streamlit - Web framework for rapid UI development
-CSV Module - Data persistence and loading
-unittest - Testing framework
+- Python 3.x - Core programming language
+- Streamlit - Web framework for rapid UI development
+- CSV Module - Data persistence and loading
+- unittest - Testing framework
 ## TESTING
+
+The application includes comprehensive tests in test_smoke_etc.py covering all core functionality.
+
+Running Tests
+Execute the test suite with:
+
+python test_smoke_etc.py
+
+
+Test Categories
+1. Unit Tests
+Question Class Tests:
+
+Verifies correct answer validation
+Tests incorrect answer detection
+Quiz Class Tests:
+
+Validates answer recording
+Tests completion detection
+Verifies score calculation
+User Class Tests:
+
+Tests name validation rules
+Checks valid/invalid name scenarios
+QuizManager Tests:
+
+Verifies CSV loading
+Tests quiz creation
+2. Smoke Tests
+Basic checks to ensure the application can start:
+
+CSV file existence
+Basic workflow execution
+Data loading functionality
+Test Coverage
+The test suite covers:
+
+✅ All core classes (Question, Quiz, User, QuizManager)
+✅ Critical business logic (validation, scoring)
+✅ Data loading and persistence
+✅ Basic integration workflows
+Expected Test Output
+
+        ......
+            ----------------------------------------------------------------------
+            Ran 6 tests in 0.XXXs
+
+        OK
+
 
 ## DOCUMENTATION
 
