@@ -399,16 +399,15 @@ For more in-depth technical documentation, each module in the application includ
 
 ## EVALUATION
 
-This README is designed for two types of readers:
+Overall this development of this quiz was exciting as well as challenging. It combines all the knowledge and theory present in the uni modules. To further challenge the technical abilities i decided to use streamlit as opposed to tkinter, even though tkinter had more in-depth teaching in the modules. Despite this, outside reading and pair programming with more experienced developers helped facilitate the progress of this application. 
 
-- Developers who want to understand how the code works and possibly extend it.
-- End users who want clear instructions on how to run the application.
+In particular the incorporation of classes to demonstrate OOP was difficult as Streamlit does not need classes to run a successful program; however, working with more experienced professionals and online [documentation](https://docs.python.org/3/tutorial/classes.html)
 
-The Development section explains the structure of the project and how the parts fit together, without going too deep into unnecessary technical detail.
+Here are some useful documents:
 
-The Documentation section focuses on clarity. It uses simple language and step-by-step guidance so anyone — regardless of technical experience — can get the app up and running.
+- https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state?utm_source=chatgpt.com
+- https://docs.streamlit.io/develop/concepts/design/custom-classes?utm_source=chatgpt.com
 
-The Testing section connects both groups. It explains what is being tested and how to run the tests, so developers can verify functionality and users can confirm everything works properly.
 
 Overall, this documentation walks through the entire lifecycle of the project — from setup and development to testing and usage — giving a clear and practical guide for anyone using or building on this application.
 
