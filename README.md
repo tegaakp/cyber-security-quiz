@@ -125,6 +125,8 @@ answer_question() - Records user's answer
 calculate_score() - Computes total correct answers
 is_complete() - Checks if all questions are answered
 save_results_to_csv() - Persists quiz results with timestamp
+
+
 3. User Class (user.py)
 Represents a quiz participant with built-in validation.
 
@@ -132,10 +134,13 @@ Key Features:
 
 Encapsulates user data (name)
 Validates user input according to business rules:
-Name must be 3-19 characters
-Cannot contain numbers
-Cannot be blank
+ - Name must be 3-19 characters
+ - Cannot contain numbers
+ - Cannot be blank
+   
 Demonstrates encapsulation by keeping validation logic within the class
+
+
 4. QuizManager Class (quiz_manager.py)
 Acts as a factory for creating quiz instances and managing question data.
 
@@ -149,6 +154,8 @@ Workflow:
 
 manager = QuizManager("questions.csv")
 quiz = manager.create_quiz()  # Returns a Quiz with loaded questions
+
+
 5. UI Modules
 The application uses separate modules for each screen:
 
