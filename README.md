@@ -33,6 +33,21 @@ In this section, we focus on the design of the quiz interface. The graphical use
 <img width="1005" height="620" alt="Screenshot 2026-02-27 at 09 31 12" src="https://github.com/user-attachments/assets/2afde016-1704-406c-9fdb-3ff689940aba" />
 <img width="679" height="522" alt="Screenshot 2026-02-27 at 09 33 57" src="https://github.com/user-attachments/assets/6cdab6d3-93ed-4788-9641-d2764d353ed0" />
 
+**Functional Requirements**
+This covers what the system does defining the features, behaviours, and tasks the application must perform.
+
+- Screen 1: The application allows users to input their name and start the quiz
+- Screen 2: The application allows users to select one answer per question as well as navigate to the next page of questions
+- Screen 3: The application allows users to finish the set of multiple choice questions and provide the option to submit the quiz
+- Screen 4: The application generates the overall score out of 5 as well as providing a result breakdown. Users are also given the option to restart the quiz.
+
+**Non-Functional Requirements**
+This describes how the system performs
+
+- Screen 1: The application must ensure user input meets the expected requirements e.g, contains 3-19 characters.
+- Screen 2: The application should load within 2 seconds and be easy to use for beginners
+- Screen 4: The application must store data securely in a csv file
+- Screen 5: The system should allow the application to be run again.
 
 ## DEVELOPMENT
 
