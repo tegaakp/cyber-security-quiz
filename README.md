@@ -19,17 +19,21 @@ For technical documentation this readme cover:
 - Implementing GUI/UI design 
 
 
-For user documentation this readme will cover:
+For user documentation, this readme will cover:
 
 
 - What the quiz does
 -  Instructions on how to run the quiz locally on your computer
--   re-requisites and running the code 
+- Pre-requisites and running the code 
 
 
 ## DESIGN
 
 In this section, we focus on the design of the quiz interface. The graphical user interface (GUI) was created using [Figma](https://www.figma.com/files/902667414815738345/recents-and-sharing?fuid=1560570689866732652) , which was used to plan and organise how the quiz looks and behaves before development. The design shows the layout, button placement, question screens, and overall structure to ensure the experience is clear and easy to follow. Figure 1 illustrates the user flow from a front-end perspective, meaning it represents what users will actually see and interact with in the final version. This includes how users move between questions, enter their answers, receive validation messages, and progress through the quiz in a logical and structured way. The aim of the design is to provide a simple, intuitive, and user-friendly experience for all users.
+
+<img width="1005" height="620" alt="Screenshot 2026-02-27 at 09 31 12" src="https://github.com/user-attachments/assets/2afde016-1704-406c-9fdb-3ff689940aba" />
+<img width="679" height="522" alt="Screenshot 2026-02-27 at 09 33 57" src="https://github.com/user-attachments/assets/6cdab6d3-93ed-4788-9641-d2764d353ed0" />
+
 
 ## DEVELOPMENT
 
