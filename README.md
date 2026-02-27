@@ -103,11 +103,12 @@ Provides a method to validate user answers
 Encapsulates question logic in a reusable object
 Example:
 
-question = Question(
-    text="What is phishing?",
-    options=["A type of malware", "A social engineering attack", "Fishing activity"],
-    correct_index=1
-)
+     question = Question(
+       text="What is phishing?",
+       options=["A type of malware", "A social engineering attack", "Fishing activity"],
+       correct_index=1
+      )
+      
 2. Quiz Class (quiz.py)
 Manages the entire quiz session, including questions, user answers, and scoring.
 
