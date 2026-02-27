@@ -198,17 +198,20 @@ Each module has one clear purpose:
 
 File Structure
 
-├── main.py                 # Application entry point
-├── question_class.py       # Question model
-├── quiz.py                 # Quiz logic and scoring
-├── quiz_manager.py         # Data loading and quiz creation
-├── user.py                 # User model with validation
-├── welcome_page.py         # Welcome screen UI
-├── quiz_page.py            # Quiz interface UI
-├── quiz_complete.py        # Results screen UI
-├── questions.csv           # Question database
-├── quiz_results.csv        # Results storage (auto-generated)
-└── test_smoke_etc.py       # Test suite
+    ├── main.py                 # Application entry point
+    ├── question_class.py       # Question model
+    ├── quiz.py                 # Quiz logic and scoring
+    ├── quiz_manager.py         # Data loading and quiz creation
+    ├── user.py                 # User model with validation
+    ├── welcome_page.py         # Welcome screen UI
+    ├── quiz_page.py            # Quiz interface UI
+    ├── quiz_complete.py        # Results screen UI
+    ├── questions.csv           # Question database
+    ├── quiz_results.csv        # Results storage (auto-generated)
+    └── test_smoke_etc.py       # Test suite
+
+
+ 
 
 
 Key Technologies
