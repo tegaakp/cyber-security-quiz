@@ -68,7 +68,7 @@ If you are using python 3 run this command:
 
       pip3 install streamlit
 
-## Main.py
+### Main.py
 
 This is the main module forming the central organiser of all modules  It coordinates navigation, initialises core objects, and manages application state using Streamlit’s session system. When the app runs, this file decides what happens next.
 
@@ -94,7 +94,7 @@ Within the code, you will notice this command line:
 The st.session_state is needed to maintain objects across reruns. Since Streamlit reruns the script on every interaction, session state is critical for maintaining continuity and ensuring all data is safe despite reruns. 
 
 
-## Question Class (question_class.py)
+### Question Class (question_class.py)
 Represents a single quiz question with its answer options.
 
 Key Features:
@@ -111,7 +111,7 @@ Example:
        correct_index=1
       )
       
-## Quiz Class (quiz.py)
+### Quiz Class (quiz.py)
 Manages the entire quiz session, including questions, user answers, and scoring.
 
 Key Features:
@@ -144,7 +144,7 @@ Validates user input according to business rules:
 Demonstrates encapsulation by keeping validation logic within the class
 
 
-## QuizManager Class (quiz_manager.py)
+### QuizManager Class (quiz_manager.py)
 Acts as a factory for creating quiz instances and managing question data.
 
 Key Features:
@@ -159,7 +159,7 @@ manager = QuizManager("questions.csv")
 quiz = manager.create_quiz()  # Returns a Quiz with loaded questions
 
 
-## UI Modules
+### UI Modules
 The application uses separate modules for each screen:
 
 - welcome_page.py - User registration and validation
@@ -168,7 +168,7 @@ The application uses separate modules for each screen:
 - main.py - Application controller managing screen flow
 
 
-## OOP Principles Applied
+### OOP Principles Applied
 
 Encapsulation
 Each class manages its own data and provides methods to interact with it:
@@ -223,69 +223,131 @@ Key Technologies
 
 The tests are organized into two main categories:
 
-1. Unit Tests
+**1. Unit Tests**
 
 These tests focus on individual classes and their core behavior.
 
 Question Class
 
-Validates correct answer checking
-
-Confirms incorrect answers are properly detected
+- Validates correct answer checking
+- Confirms incorrect answers are properly detected
 
 Quiz Class
 
-Verifies answers are recorded accurately
-
-Tests quiz completion logic
-
+- Verifies answers are recorded accurately
+- Tests quiz completion logic
 Confirms score calculation is correct
 
 User Class
 
-Enforces name validation rules
-
-Tests both valid and invalid input scenarios
+- Enforces name validation rules
+- Tests both valid and invalid input scenarios
 
 QuizManager
 
-Verifies CSV data loading
+- Verifies CSV data loading
+- Tests quiz instance creation
 
-Tests quiz instance creation
-
-2. Smoke Tests
+**2. Smoke Tests**
 
 These tests confirm that the application can start and run without critical failures.
 
 They check:
 
-CSV file availability
+- CSV file availability
+- Data loading functionality
+- Basic end-to-end workflow execution
 
-Data loading functionality
-
-Basic end-to-end workflow execution
-
-Test Coverage
+**Test Coverage**
 
 The test suite provides coverage for:
 
-All core classes (Question, Quiz, User, QuizManager)
-
-Key business logic (validation rules, scoring, completion checks)
-
-Data loading and handling
-
-Basic integration across components
+- All core classes (Question, Quiz, User, QuizManager)
+- Key business logic (validation rules, scoring, completion checks)
+- Data loading and handling
+- Basic integration across components
 
 Together, these tests help ensure reliability, prevent regressions, and confirm that major features work as intended.
 
-        ......
-        ----------------------------------------------------------------------
-            Ran 6 tests in 0.XXXs
+    Expected Test Output
+    ......
+    ----------------------------------------------------------------------
+    Ran 6 tests in 0.XXXs
 
-        OK
+    OK
+
 
 
 ## DOCUMENTATION
+
+This guide will help you run the Cyber Security Quiz application on your local computer.
+
+Prerequisites
+You need Python installed on your computer. 
+Check if you have it by opening your terminal (Command Prompt on Windows, Terminal on Mac/Linux) and typing:
+
+    python --version
+    
+You should see something like Python 3.8.0 or higher. If not, download Python from python.org.
+
+### Installation Steps
+
+Step 1: Download the Application
+Download all the project files to a folder on your computer.
+
+Step 2: Open Terminal in Project Folder
+Windows: Open the folder, then type cmd in the address bar and press Enter
+Mac/Linux: Right-click the folder and select "Open Terminal Here" (or navigate using cd command)
+
+Step 3: Install Required Packages
+Copy and paste this command into your terminal and press Enter:
+
+    pip install streamlit
+    
+Wait for the installation to complete. You'll see a success message when it's done.
+
+Running the Application
+
+## Start the Quiz
+
+In your terminal, type this command and press Enter:
+
+    streamlit run main.py
+
+What Happens Next:
+
+- Your web browser will automatically open
+- You'll see the quiz welcome screen
+- If the browser doesn't open automatically, look for a URL in the terminal (usually http://localhost:8501) and copy it into your browser
+
+
+## Using the Quiz
+
+Step 1: Enter Your Name in the text box
+    Your name must be between 3 and 19 characters
+    No numbers allowed
+    Click "Start Quiz" when ready
+   
+Step 2: Answer Questions
+    Read each question carefully
+    Select one answer by clicking the radio button
+    You must answer all questions before submitting
+    
+Step 3: Submit and View Results
+    Click "Submit Quiz" when you've answered all questions
+    See your score and percentage
+    Review which questions you got right or wrong
+    Your results are automatically saved to quiz_results.csv
+    
+Step 4: Restart (Optional)
+    Click "Restart Quiz" to take the quiz again
+    You can take the quiz as many times as you like
+    Stopping the Application
+    
+To stop the quiz application:
+
+Go back to your terminal window
+Press Ctrl + C (Windows/Linux) or Cmd + C (Mac)
+The application will shut down
 
 ## EVALUATION
