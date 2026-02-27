@@ -221,50 +221,66 @@ Key Technologies
 - unittest - Testing framework
 ## TESTING
 
-The application includes comprehensive tests in test_smoke_etc.py covering all core functionality.
+The tests are organized into two main categories:
 
-Running Tests
-Execute the test suite with:
-
-python test_smoke_etc.py
-
-
-Test Categories
 1. Unit Tests
-Question Class Tests:
 
-Verifies correct answer validation
-Tests incorrect answer detection
-Quiz Class Tests:
+These tests focus on individual classes and their core behavior.
 
-Validates answer recording
-Tests completion detection
-Verifies score calculation
-User Class Tests:
+Question Class
 
-Tests name validation rules
-Checks valid/invalid name scenarios
-QuizManager Tests:
+Validates correct answer checking
 
-Verifies CSV loading
-Tests quiz creation
+Confirms incorrect answers are properly detected
+
+Quiz Class
+
+Verifies answers are recorded accurately
+
+Tests quiz completion logic
+
+Confirms score calculation is correct
+
+User Class
+
+Enforces name validation rules
+
+Tests both valid and invalid input scenarios
+
+QuizManager
+
+Verifies CSV data loading
+
+Tests quiz instance creation
+
 2. Smoke Tests
-Basic checks to ensure the application can start:
 
-CSV file existence
-Basic workflow execution
+These tests confirm that the application can start and run without critical failures.
+
+They check:
+
+CSV file availability
+
 Data loading functionality
-Test Coverage
-The test suite covers:
 
-✅ All core classes (Question, Quiz, User, QuizManager)
-✅ Critical business logic (validation, scoring)
-✅ Data loading and persistence
-✅ Basic integration workflows
-Expected Test Output
+Basic end-to-end workflow execution
+
+Test Coverage
+
+The test suite provides coverage for:
+
+All core classes (Question, Quiz, User, QuizManager)
+
+Key business logic (validation rules, scoring, completion checks)
+
+Data loading and handling
+
+Basic integration across components
+
+Together, these tests help ensure reliability, prevent regressions, and confirm that major features work as intended.
 
         ......
-            ----------------------------------------------------------------------
+        ----------------------------------------------------------------------
             Ran 6 tests in 0.XXXs
 
         OK
