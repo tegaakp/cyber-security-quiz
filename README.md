@@ -37,6 +37,54 @@ In this section, we focus on the design of the quiz interface. The graphical use
 
 ## DEVELOPMENT
 
+This section highlights the technical side of how the quiz was built and is intended for readers who want a deeper look into the development process. If you’re looking for a more user‑friendly explanation instead, please refer to the **Documentation** section of this README.
+
+This quiz contains the following modules in the python domain
+
+- main.py
+- quiz_page.py
+- welcome_page.py
+- quiz_complete.py
+- questions.csv
+- quiz_results.csv
+  The following represent Class Modules
+  - user.py
+  - quiz.py
+  - quiz_manager.py
+ 
+**Pre-requisites**
+
+Please ensure you have the latest version of python or Python 3.11+ . Run this command to check your current python version.
+
+      python --version
+
+If you are using python 3 run this command:
+
+      python3 --version
+You will also need streamlit 
+
+      pip install streamlit
+If you are using python 3 run this command:
+
+      pip3 install streamlit
+
+# Main.py
+
+This is the main module forming the central organiser of all modules  It coordinates navigation, initialises core objects, and manages application state using Streamlit’s session system. When the app runs, this file decides what happens next.
+
+This is the desired flow:
+
+     Welcome → Quiz → End
+
+Imported dependencies 
+
+      import streamlit as st
+      from welcome_page import show_welcome_screen
+      from quiz_manager import QuizManager
+      from quiz_page import show_quiz_screen
+      from quiz_complete import show_end_screen
+
+
 ## TESTING
 
 ## DOCUMENTATION
