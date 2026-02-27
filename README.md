@@ -245,7 +245,21 @@ Key Technologies
 - Streamlit - Web framework for rapid UI development
 - CSV Module - Data persistence and loading
 - unittest - Testing framework
+
+  
 ## TESTING
+This section covers how this application uses both smoke test and unittests to assess the functionality of the code. 
+A smoke test is a simple, basic test to check whether the most important parts of a system work at all.
+During the developement of the testing module after each line of code was written unnitest was run in the terminal to assess that each line of code was being executed properly. 
+
+Here is an example of a simple smoke test used in the application:
+
+    def test_csv_exists(self):
+        """Test that questions.csv exists"""
+        self.assertTrue(os.path.exists("questions.csv"))
+
+Additionally manual testing was conducted to run the streamlit application. Once a piece of code was saved into the module, the application was run using **streamlit run main.py** which would highlight which areas of code were working and which ones were not.
+
 
 The tests are organised into two main categories:
 
@@ -301,6 +315,7 @@ Together, these tests help ensure reliability, prevent regressions, and confirm 
     Ran 6 tests in 0.XXXs
 
     OK
+<img width="1140" height="120" alt="Screenshot 2026-02-27 at 17 08 18" src="https://github.com/user-attachments/assets/662231d2-49b8-444b-bb55-30081e0041ae" />
 
 
 
@@ -319,7 +334,11 @@ You should see something like Python 3.8.0 or higher. If not, download Python fr
 ### Installation Steps
 
 Step 1: Download the Application
-Download all the project files to a folder on your computer.
+Download all the project files to a folder on your computer by clining the repository into your terminal. You can choose to clone the HTTPS or SSH key link 
+
+Run this following command:
+
+    git clone- (link)
 
 Step 2: Open Terminal in Project Folder
 Windows: Open the folder, then type cmd in the address bar and press Enter
@@ -334,7 +353,7 @@ Wait for the installation to complete. You'll see a success message when it's do
 
 Running the Application
 
-## Start the Quiz
+### Start the Quiz
 
 In your terminal, type this command and press Enter:
 
@@ -347,7 +366,7 @@ What Happens Next:
 - If the browser doesn't open automatically, look for a URL in the terminal (usually http://localhost:8501) and copy it into your browser
 
 
-## Using the Quiz
+### Using the Quiz
 
 Step 1: Enter Your Name in the text box
     Your name must be between 3 and 19 characters
@@ -376,7 +395,7 @@ Go back to your terminal window
 Press Ctrl + C (Windows/Linux) or Cmd + C (Mac)
 The application will shut down
 
-## EVALUATION
+### EVALUATION
 
 This README is designed for two types of readers:
 
